@@ -40,7 +40,7 @@ type Mutation {
     ): Post @update
 
     deletePost(
-        id: ID!
+        id: ID! @whereKey
     ): Post @delete
 }
 
